@@ -56,3 +56,19 @@ testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
 testImplementation "com.google.truth:truth:1.1.3"
 testImplementation "androidx.arch.core:core-testing:2.1.0"
 debugImplementation "androidx.fragment:fragment-testing:1.5.5"
+
+//backup false
+<cloud-backup>
+        <exclude domain="root" />
+        <exclude domain="file" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" />
+        <exclude domain="file" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </device-transfer>
