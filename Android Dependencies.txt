@@ -2,8 +2,13 @@ def room_version = "2.4.3"
 def lifecycle_version = "2.6.2"
 def nav_version = "2.5.3"
 
-id 'kotlin-android'
+(project) 
+id 'com.google.dagger.hilt.android' version '2.41' apply false
+
+(app)
+id 'kotlin-parcelize'
 id 'kotlin-kapt'
+id 'dagger.hilt.android.plugin'
 
 //Fragment
 implementation "androidx.fragment:fragment-ktx:1.6.1"
